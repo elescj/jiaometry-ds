@@ -39,3 +39,5 @@ Designed for continuous, low-cost enforcement.
 - Retention window configuration
 - Slack or SNS notifications
 - Metrics on estimated savings
+
+## Screenshots
