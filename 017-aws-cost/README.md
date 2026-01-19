@@ -41,5 +41,3 @@ Designed for continuous, low-cost enforcement.
 - Metrics on estimated savings
 
 ## Screenshots
-![Lambda](attachments/lambda-1.png)
-![Lambda](attachments/lambda-2.png)
