@@ -14,6 +14,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [CloudWatch Logs](#cloudwatch-logs)
   - [CloudWatch Alarms & Alert Validation](#cloudwatch-alarms--alert-validation)
   - [Cost Management & Resource Cleanup](#cost-management--resource-cleanup)
+- [AWS Lambda](#-aws-lambda)
 - [Summary](#-summary)
 
 ## 🧠 Overview
@@ -149,6 +150,10 @@ A CloudWatch alarm is configured to monitor CPU utilization and trigger when a d
 ### Cost Management & Resource Cleanup
 
 After validating metrics, logs, and alarms, all AWS resources are deleted, including the EC2 instance, VPC components, CloudWatch alarms, and log groups. This ensures zero ongoing cost while preserving the configuration and documentation for reproducibility.
+
+## 💻 AWS Lambda
+![Lambda](attachments/lambda-1.png)
+![Lambda](attachments/lambda-2.png)
 
 ## 💡 Summary
 
