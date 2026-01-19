@@ -1,37 +1,64 @@
 import boto3
+import os
+
+ec2 = boto3.client("ec2")
+
+DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
+PROTECTED_TAG = "DoNotDelete"
 
 def lambda_handler(event, context):
-    ec2 = boto3.client('ec2')
 
-    # Get all EBS snapshots
-    response = ec2.describe_snapshots(OwnerIds=['self'])
-
-    # Get all active EC2 instance IDs
-    instances_response = ec2.describe_instances(Filters=[{'Name': 'instance-state-name', 'Values': ['running']}])
+    # Get running instance IDs
     active_instance_ids = set()
+    paginator = ec2.get_paginator("describe_instances")
 
-    for reservation in instances_response['Reservations']:
-        for instance in reservation['Instances']:
-            active_instance_ids.add(instance['InstanceId'])
+    for page in paginator.paginate(
+        Filters=[{"Name": "instance-state-name", "Values": ["running"]}]
+    ):
+        for reservation in page["Reservations"]:
+            for instance in reservation["Instances"]:
+                active_instance_ids.add(instance["InstanceId"])
 
-    # Iterate through each snapshot and delete if it's not attached to any volume or the volume is not attached to a running instance
-    for snapshot in response['Snapshots']:
-        snapshot_id = snapshot['SnapshotId']
-        volume_id = snapshot.get('VolumeId')
+    # Get snapshots
+    snapshot_paginator = ec2.get_paginator("describe_snapshots")
 
-        if not volume_id:
-            # Delete the snapshot if it's not attached to any volume
-            ec2.delete_snapshot(SnapshotId=snapshot_id)
-            print(f"Deleted EBS snapshot {snapshot_id} as it was not attached to any volume.")
-        else:
-            # Check if the volume still exists
+    for page in snapshot_paginator.paginate(OwnerIds=["self"]):
+        for snapshot in page["Snapshots"]:
+            snapshot_id = snapshot["SnapshotId"]
+            volume_id = snapshot.get("VolumeId")
+
+            # Skip protected snapshots
+            tags = {t["Key"]: t["Value"] for t in snapshot.get("Tags", [])}
+            if PROTECTED_TAG in tags:
+                continue
+
+            # Snapshot without volume
+            if not volume_id:
+                delete_snapshot(snapshot_id, "no associated volume")
+                continue
+
+            # Check volume
             try:
-                volume_response = ec2.describe_volumes(VolumeIds=[volume_id])
-                if not volume_response['Volumes'][0]['Attachments']:
-                    ec2.delete_snapshot(SnapshotId=snapshot_id)
-                    print(f"Deleted EBS snapshot {snapshot_id} as it was taken from a volume not attached to any running instance.")
+                vol = ec2.describe_volumes(VolumeIds=[volume_id])["Volumes"][0]
+
+                # Volume not attached
+                if not vol["Attachments"]:
+                    delete_snapshot(snapshot_id, "volume not attached")
+                    continue
+
+                # Volume attached to stopped instance
+                attached_instance = vol["Attachments"][0]["InstanceId"]
+                if attached_instance not in active_instance_ids:
+                    delete_snapshot(snapshot_id, "attached to non-running instance")
+
             except ec2.exceptions.ClientError as e:
-                if e.response['Error']['Code'] == 'InvalidVolume.NotFound':
-                    # The volume associated with the snapshot is not found (it might have been deleted)
-                    ec2.delete_snapshot(SnapshotId=snapshot_id)
-                    print(f"Deleted EBS snapshot {snapshot_id} as its associated volume was not found.")
+                if e.response["Error"]["Code"] == "InvalidVolume.NotFound":
+                    delete_snapshot(snapshot_id, "volume not found")
+
+
+def delete_snapshot(snapshot_id, reason):
+    if DRY_RUN:
+        print(f"[DRY-RUN] Would delete {snapshot_id} ({reason})")
+    else:
+        ec2.delete_snapshot(SnapshotId=snapshot_id)
+        print(f"Deleted {snapshot_id} ({reason})")
