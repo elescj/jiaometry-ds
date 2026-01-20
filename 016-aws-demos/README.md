@@ -176,8 +176,7 @@ environments where volumes and instances are frequently created and removed.
 - Logs all actions to CloudWatch
 
 ### Code Location
-The Lambda implementation is maintained as a **self-contained subproject**
-with its own documentation:
+The Lambda implementation is maintained as a **self-contained subproject** with its own documentation:
 
 ## 💡 Summary
 
