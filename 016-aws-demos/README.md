@@ -14,7 +14,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [CloudWatch Logs](#cloudwatch-logs)
   - [CloudWatch Alarms & Alert Validation](#cloudwatch-alarms--alert-validation)
   - [Cost Management & Resource Cleanup](#cost-management--resource-cleanup)
-- [AWS Lambda](#-aws-lambda)
+- [AWS Lambda](#-aws-lambda-cost-optimization-automation)
 - [Summary](#-summary)
 
 ## 🧠 Overview
@@ -151,9 +151,33 @@ A CloudWatch alarm is configured to monitor CPU utilization and trigger when a d
 
 After validating metrics, logs, and alarms, all AWS resources are deleted, including the EC2 instance, VPC components, CloudWatch alarms, and log groups. This ensures zero ongoing cost while preserving the configuration and documentation for reproducibility.
 
-## 💻 AWS Lambda
+## 💻 AWS Lambda – Cost Optimization Automation
+
+In addition to the EC2-based monitoring workflow, this demo includes a serverless AWS Lambda function designed for **ongoing cost optimization**.
+
+This Lambda is intentionally decoupled from the CI/CD and EC2 workload. Its purpose is to demonstrate how **event-driven automation** can be used to continuously control cloud costs without requiring persistent compute.
+
 ![Lambda](attachments/lambda-1.png)
 ![Lambda](attachments/lambda-2.png)
+
+### Purpose
+The Lambda identifies and cleans up unused EBS snapshots that:
+- Have no associated volume
+- Reference deleted volumes
+- Are attached to volumes not connected to running EC2 instances
+
+This prevents silent accumulation of snapshot storage costs in dynamic
+environments where volumes and instances are frequently created and removed.
+
+### Implementation
+- Triggered on a schedule via CloudWatch Events
+- Uses least-privilege IAM permissions
+- Includes dry-run support and tag-based protection
+- Logs all actions to CloudWatch
+
+### Code Location
+The Lambda implementation is maintained as a **self-contained subproject**
+with its own documentation:
 
 ## 💡 Summary
 
