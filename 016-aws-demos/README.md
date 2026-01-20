@@ -177,6 +177,7 @@ environments where volumes and instances are frequently created and removed.
 
 ### Code Location
 The Lambda implementation is maintained as a **self-contained subproject** with its own documentation:
+([View lambdas](lambdas))
 
 ## 💡 Summary
 
