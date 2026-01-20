@@ -14,7 +14,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [CloudWatch Logs](#cloudwatch-logs)
   - [CloudWatch Alarms & Alert Validation](#cloudwatch-alarms--alert-validation)
   - [Cost Management & Resource Cleanup](#cost-management--resource-cleanup)
-- [AWS Lambda - Cost Optimization Automation](#-aws-lambda---cost-optimization-automation)
+- [AWS Lambda - Cost Optimization Automation](#-aws-lambda--cost-optimization-automation)
 - [Summary](#-summary)
 
 ## 🧠 Overview
