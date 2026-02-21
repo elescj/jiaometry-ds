@@ -7,3 +7,6 @@ Include screenshots or GIFs – Show the hero page fading out, posting a comment
 Optional code link – Share a GitHub repo, but remove your Supabase keys (or use environment variables) so the project still works for visitors.
 
 Highlight skills – Call out full-stack integration, database handling, and asynchronous JS logic, showing technical depth without needing a large application.
+
+
+https://realtime-bulletin-board-demo.netlify.app/
