@@ -1,4 +1,4 @@
-# ☁️ AWS Demo on Deployment and Cost Management
+# ☁️ AWS Demo on Deployment, Observability, and Cost Management
 An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and deployment monitoring with CloudWatch, with an emphasis on cost-aware resource management.
 ![Graphical Summary](attachments/aws-demos.png)
 
