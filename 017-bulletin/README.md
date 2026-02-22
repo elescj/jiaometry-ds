@@ -5,13 +5,7 @@
 ## 📂 Table of Contents
 - [Overview](#-overview)
 - [Live Demo](#-live-demo)
-- [Cost Management](#-cost-management)
-  - [EC2 Instance Deployment](#ec2-instance-deployment)
-  - [Custom VPC & Networking Configuration](#custom-vpc--networking-configuration)
-  - [CloudWatch Metrics Collection](#cloudwatch-metrics-collection)
-  - [CloudWatch Logs](#cloudwatch-logs)
-  - [CloudWatch Alarms & Alert Validation](#cloudwatch-alarms--alert-validation)
-  - [Cost Management & Resource Cleanup](#cost-management--resource-cleanup)
+- [Code Snaps](#-code-snaps)
 - [AWS Lambda - Cost Optimization Automation](#-aws-lambda--cost-optimization-automation)
 - [Summary](#-summary)
 
@@ -24,8 +18,8 @@ https://realtime-bulletin-board-demo.netlify.app/
 
 [Include screenshots or GIFs – Show the hero page fading out, posting a comment, and the dynamic rendering of posts.]
 
-## 🚨 Cost Management
-This section demonstrates system observability and cost-aware monitoring using Amazon CloudWatch. An EC2 instance is deployed inside a custom VPC, application metrics and logs are collected, and alarms are configured to validate automated alerting behavior under load.
+## 🚨 Code Snaps
+[Optional code link – Share a GitHub repo, but remove your Supabase keys (or use environment variables) so the project still works for visitors.]
 
 ### EC2 Instance Deployment
 
@@ -130,7 +124,6 @@ This project demonstrates an end-to-end AWS workflow combining CI/CD automation,
 
 
 
-Optional code link – Share a GitHub repo, but remove your Supabase keys (or use environment variables) so the project still works for visitors.
 
 Highlight skills – Call out full-stack integration, database handling, and asynchronous JS logic, showing technical depth without needing a large application.
 
