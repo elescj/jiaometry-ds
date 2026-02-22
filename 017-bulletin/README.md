@@ -1,5 +1,5 @@
 # 📌 Supabase-Powered Real-Time Bulletin Board
-[Place holder]
+A lightweight real-time bulletin board built with HTML, JavaScript, and Supabase (PostgreSQL), demonstrating async API integration, JSON-based data handling, and secure row-level database access.
 ![Graphical Summary](attachments/bulletin.png)
 
 ## 📂 Table of Contents
