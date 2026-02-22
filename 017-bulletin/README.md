@@ -40,6 +40,7 @@ The front end communicates with Supabase using the **Supabase JavaScript client*
 ## 📸 Code Snaps
 
 ### Database Structure
+![Database Structure](attachments/database-structure.png)
 
 [Optional code link – Share a GitHub repo, but remove your Supabase keys (or use environment variables) so the project still works for visitors.]
 
