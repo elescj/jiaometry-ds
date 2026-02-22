@@ -4,9 +4,7 @@
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
-- [CI/CD Pipeline & Automated Deployment](#cicd-pipeline-automated-deployment)
-  - [Build Setup](#build-setup)
-  - [Artifacts & Output](#artifacts--output)
+- [Live Demo](#-live-demo)
 - [Cost Management](#-cost-management)
   - [EC2 Instance Deployment](#ec2-instance-deployment)
   - [Custom VPC & Networking Configuration](#custom-vpc--networking-configuration)
@@ -20,18 +18,9 @@
 ## 🧠 Overview
 [Add a project description – Highlight the technologies: HTML, CSS, JS, Supabase, SQL, JSON, and async APIs.]
 
-<a id="cicd-pipeline-automated-deployment"></a>
-## 🔁 CI/CD Pipeline & Automated Deployment
-
-This section demonstrates an end-to-end CI/CD pipeline for a Python application using GitHub and AWS CodeBuild. Changes pushed to the GitHub repository automatically trigger builds, which include dependency installation, running tests, and artifact creation. This workflow ensures reproducible, automated builds and provides full visibility into the build process.
-
-Key highlights of this CI/CD pipeline include:
-- Automated build and test process triggered via **GitHub webhooks**
-- Use of **AWS CodeBuild** for isolated, consistent build environments
-- **Buildspec.yml** defines install, build, and test phases
-- **CloudWatch logs** provide detailed visibility into pipeline execution
-- Temporary storage of artifacts in S3, ensuring zero persistent cost
-The workflow follows a standard pattern: GitHub push → CodeBuild triggers → build and test → logs streamed to CloudWatch → artifacts temporarily stored in S3.
+## ▶️ Live Demo
+[Link to a live demo – Deploy the site on Netlify (or Vercel) so visitors can post and view messages.]
+https://realtime-bulletin-board-demo.netlify.app/
 
 ### Build Setup
 
@@ -175,8 +164,6 @@ This project demonstrates an end-to-end AWS workflow combining CI/CD automation,
 
 
 
-Link to a live demo – Deploy the site on Netlify (or Vercel) so visitors can post and view messages.
-https://realtime-bulletin-board-demo.netlify.app/
 
 
 Include screenshots or GIFs – Show the hero page fading out, posting a comment, and the dynamic rendering of posts.
