@@ -6,7 +6,6 @@
 - [Overview](#-overview)
 - [Live Demo](#-live-demo)
 - [Code Snaps](#-code-snaps)
-- [AWS Lambda - Cost Optimization Automation](#-aws-lambda--cost-optimization-automation)
 - [Summary](#-summary)
 
 ## 🧠 Overview
