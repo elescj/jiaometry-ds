@@ -61,4 +61,12 @@ Displays how posts are dynamically rendered in the browser, including event hand
 
 ## 💡 Summary
 
-[Highlight skills – Call out full-stack integration, database handling, and asynchronous JS logic, showing technical depth without needing a large application.]
+This project demonstrates a lightweight, real-time bulletin board built with **HTML, CSS, JavaScript, and Supabase (PostgreSQL)**. Key takeaways include:  
+
+- Full-stack integration without a custom backend, leveraging Supabase’s managed database and serverless API.  
+- Asynchronous JavaScript communication with a PostgreSQL database using the Supabase client.  
+- JSON-based data handling and dynamic DOM rendering for real-time updates.  
+- Implementation of **Row-Level Security (RLS)** policies to allow public posting while maintaining database security.  
+- Hands-on experience designing database schemas, configuring policies, and connecting front-end logic to backend services.  
+
+This demo showcases technical skills while protecting personal privacy, highlighting the foundation of a full-stack web project in a simple, approachable format.
