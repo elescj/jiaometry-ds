@@ -33,7 +33,7 @@ The front end communicates with Supabase using the **Supabase JavaScript client*
 - Secure frontend-to-database communication
 
 ## ▶️ Live Demo
-![Demo Preview](assets/demo.gif)
+![Demo Preview](assets/live-demo.gif)
 🔗 [Try Live Demo Yourself](https://realtime-bulletin-board-demo.netlify.app/)
 
 
