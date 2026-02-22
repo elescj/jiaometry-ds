@@ -34,7 +34,7 @@ The front end communicates with Supabase using the **Supabase JavaScript client*
 
 ## ▶️ Live Demo
 [Link to a live demo – Deploy the site on Netlify (or Vercel) so visitors can post and view messages.]
-https://realtime-bulletin-board-demo.netlify.app/
+🔗 [View the Live Demo](https://realtime-bulletin-board-demo.netlify.app/)
 
 [Include screenshots or GIFs – Show the hero page fading out, posting a comment, and the dynamic rendering of posts.]
 
