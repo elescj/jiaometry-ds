@@ -1,5 +1,5 @@
 # 📌 Supabase-Powered Real-Time Bulletin Board
-An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and deployment monitoring with CloudWatch, with an emphasis on cost-aware resource management.
+[Place holder]
 ![Graphical Summary](attachments/bulletin.png)
 
 ## 📂 Table of Contents
@@ -18,17 +18,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
 - [Summary](#-summary)
 
 ## 🧠 Overview
-This project demonstrates an end-to-end AWS deployment workflow, combining CI/CD automation, infrastructure deployment, system monitoring, and cost-aware cloud management.
-
-A Python application is built and tested through a GitHub-triggered AWS CodeBuild pipeline, then deployed to an EC2 instance running inside a custom VPC and subnet. Amazon CloudWatch is used to collect metrics and logs, and alarms are configured to detect threshold breaches. A workload-generating Python script is executed to validate monitoring and alerting behavior. All AWS resources are cleaned up after validation to ensure zero ongoing cost.
-
-Key highlights:
-
-- Automated CI/CD pipeline using GitHub webhooks and AWS CodeBuild
-- Custom VPC, subnet, routing, and security groups for EC2 deployment
-- CloudWatch metrics, logs, and alarms for observability and alerting
-- Workload generation to validate monitoring and alarm triggers
-- Cost-conscious teardown of all AWS resources after testing
+[Add a project description – Highlight the technologies: HTML, CSS, JS, Supabase, SQL, JSON, and async APIs.]
 
 <a id="cicd-pipeline-automated-deployment"></a>
 ## 🔁 CI/CD Pipeline & Automated Deployment
@@ -186,8 +176,8 @@ This project demonstrates an end-to-end AWS workflow combining CI/CD automation,
 
 
 Link to a live demo – Deploy the site on Netlify (or Vercel) so visitors can post and view messages.
+https://realtime-bulletin-board-demo.netlify.app/
 
-Add a project description – Highlight the technologies: HTML, CSS, JS, Supabase, SQL, JSON, and async APIs.
 
 Include screenshots or GIFs – Show the hero page fading out, posting a comment, and the dynamic rendering of posts.
 
@@ -196,4 +186,3 @@ Optional code link – Share a GitHub repo, but remove your Supabase keys (or us
 Highlight skills – Call out full-stack integration, database handling, and asynchronous JS logic, showing technical depth without needing a large application.
 
 
-https://realtime-bulletin-board-demo.netlify.app/
