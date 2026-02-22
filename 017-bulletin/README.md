@@ -30,7 +30,8 @@ The front end communicates with Supabase using the **Supabase JavaScript client*
 - Asynchronous API integration in JavaScript  
 - JSON-based data exchange  
 - Dynamic DOM manipulation and rendering  
-- Secure frontend-to-database communication  
+- Secure frontend-to-database communication
+
 ## ▶️ Live Demo
 [Link to a live demo – Deploy the site on Netlify (or Vercel) so visitors can post and view messages.]
 https://realtime-bulletin-board-demo.netlify.app/
