@@ -22,44 +22,7 @@
 [Link to a live demo – Deploy the site on Netlify (or Vercel) so visitors can post and view messages.]
 https://realtime-bulletin-board-demo.netlify.app/
 
-### Build Setup
-
-This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
-
-This CI/CD pipeline automatically builds and tests a Python application whenever changes are pushed to GitHub, using AWS CodeBuild for isolated, reproducible builds.
-
-**Step 1: Source Control & Trigger**
-The source code for this Python application is hosted in a GitHub repository, which serves as the single source of truth for the project. A GitHub webhook is configured to automatically trigger an AWS CodeBuild project whenever changes are pushed to the main branch. This ensures that every commit is automatically built, tested, and validated without manual intervention.
-
-**Step 2: Build Environment Setup**
-AWS CodeBuild provisions an ephemeral Linux build environment using a managed image with Python preinstalled. This ensures consistent builds across runs.
-
-**Step 3: Build Specification (buildspec.yml)**
-The pipeline behavior is defined in buildspec.yml, which specifies install, build, and test phases. Dependencies are installed, and application tests are executed automatically.
-([View buildspec.yml](cloudbuild/buildspec.yml))
-
-**Step 4: Build Execution & Logs**
-During execution, CodeBuild streams logs to CloudWatch, providing visibility into each phase of the pipeline and enabling rapid debugging.
-
-- **Build history**
-  ![Graphical Summary](attachments/builds.png)
-
-- **Build #1 details**
-  ![Graphical Summary](attachments/build1.png)
-  **Build #2 details**
-  ![Graphical Summary](attachments/build2.png)
-
-**Step 5: Artifacts & Output**
-Build artifacts are temporarily stored in S3 for validation purposes. No persistent storage is retained after pipeline validation.
-
-**Step 6: Cost Management & Cleanup**
-After validating the pipeline, all AWS resources (CodeBuild project, S3 bucket, IAM role) were deleted to ensure zero ongoing cost. This repository preserves the full configuration for reproducibility.
-
-### Artifacts & Output
-
-During each successful build, AWS CodeBuild generates build artifacts that represent the validated output of the pipeline. These artifacts are temporarily stored in an Amazon S3 bucket to verify build correctness and pipeline integrity.
-
-The artifacts are used solely for validation and inspection purposes and are not deployed to a long-running production environment. After confirming successful execution, the artifacts and associated storage resources are removed to prevent ongoing costs.
+[Include screenshots or GIFs – Show the hero page fading out, posting a comment, and the dynamic rendering of posts.]
 
 ## 🚨 Cost Management
 This section demonstrates system observability and cost-aware monitoring using Amazon CloudWatch. An EC2 instance is deployed inside a custom VPC, application metrics and logs are collected, and alarms are configured to validate automated alerting behavior under load.
@@ -166,7 +129,6 @@ This project demonstrates an end-to-end AWS workflow combining CI/CD automation,
 
 
 
-Include screenshots or GIFs – Show the hero page fading out, posting a comment, and the dynamic rendering of posts.
 
 Optional code link – Share a GitHub repo, but remove your Supabase keys (or use environment variables) so the project still works for visitors.
 
