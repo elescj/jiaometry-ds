@@ -45,7 +45,11 @@ The front end communicates with Supabase using the **Supabase JavaScript client*
 ### Row-Level Security Policies
 ![Row-Level Security Policies](attachments/policies.png)
 
-[Optional code link – Share a GitHub repo, but remove your Supabase keys (or use environment variables) so the project still works for visitors.]
+### Supabase Integration Code
+![Supabase Integration Code](attachments/integration-code.png)
+
+### DOM Manipulation Logic
+![DOM Manipulation Logic](attachments/dom.png)
 
 ## 💡 Summary
 
