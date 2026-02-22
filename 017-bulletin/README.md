@@ -3,12 +3,16 @@ A lightweight real-time bulletin board built with HTML, JavaScript, and Supabase
 ![Graphical Summary](attachments/bulletin.png)
 
 ## 📂 Table of Contents
-- [Overview](#-overview)
+- [Introduction](#-introduction)
+- [Project Description](#-project-description)
 - [Live Demo](#-live-demo)
 - [Code Snaps](#-code-snaps)
 - [Summary](#-summary)
 
-## 🧠 Overview
+## ✍️ Introduction
+[Place holder]
+
+## 🧠 Project Description
 [Add a project description – Highlight the technologies: HTML, CSS, JS, Supabase, SQL, JSON, and async APIs.]
 
 ## ▶️ Live Demo
