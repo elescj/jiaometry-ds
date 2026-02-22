@@ -44,15 +44,12 @@ The front end communicates with Supabase using the **Supabase JavaScript client*
 
 ### Row-Level Security Policies
 ![Row-Level Security Policies](attachments/policies.png)
-<img src="attachments/policies.png" style="max-width: none;">
 
 ### Supabase Integration Code
 ![Supabase Integration Code](attachments/integration-code.png)
-<img src="attachments/integration-code.png" style="max-width: none;">
 
 ### DOM Manipulation Logic
 ![DOM Manipulation Logic](attachments/dom.png)
-<img src="attachments/dom.png" style="max-width: none;">
 
 ## 💡 Summary
 
