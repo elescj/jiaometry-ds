@@ -53,8 +53,7 @@ Highlights the JavaScript client setup, including async `insert` and `select` op
 
 ### DOM Manipulation Logic
 ![DOM Manipulation Logic](attachments/dom.png)
-Highlights the JavaScript client setup, including async `insert` and `select` operations for real-time communication with Supabase.
-
+Displays how posts are dynamically rendered in the browser, including event handling for the post button and hero page fade-out.
 ## 💡 Summary
 
 [Highlight skills – Call out full-stack integration, database handling, and asynchronous JS logic, showing technical depth without needing a large application.]
