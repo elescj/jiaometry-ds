@@ -10,7 +10,10 @@ A lightweight real-time bulletin board built with HTML, JavaScript, and Supabase
 - [Summary](#-summary)
 
 ## ✍️ Introduction
-[Place holder]
+
+This project was inspired by a young neighbor who asked me to build a website for us. What began as a simple idea evolved into a real-time community bulletin board connecting our families. The application was built using HTML, JavaScript, and Supabase (PostgreSQL), demonstrating asynchronous API integration, JSON-based data handling, and secure row-level database access.
+
+To protect personal privacy, this repository contains a separate demo version that showcases the technical foundation and learning outcomes of the project without including any private information.
 
 ## 🧠 Project Description
 [Add a project description – Highlight the technologies: HTML, CSS, JS, Supabase, SQL, JSON, and async APIs.]
