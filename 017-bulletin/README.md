@@ -41,19 +41,24 @@ The front end communicates with Supabase using the **Supabase JavaScript client*
 
 ### Database Structure
 ![Database Structure](attachments/database-structure.png)
+
 Shows the `posts` table schema in Supabase, including columns for ID, text, and timestamps. Sensitive data and API keys are excluded.
 
 ### Row-Level Security Policies
 ![Row-Level Security Policies](attachments/policies.png)
+
 Illustrates the RLS configuration that allows public users to insert and select posts while keeping the database secure.
 
 ### Supabase Integration Code
 ![Supabase Integration Code](attachments/integration-code.png)
+
 Highlights the JavaScript client setup, including async `insert` and `select` operations for real-time communication with Supabase.
 
 ### DOM Manipulation Logic
 ![DOM Manipulation Logic](attachments/dom.png)
+
 Displays how posts are dynamically rendered in the browser, including event handling for the post button and hero page fade-out.
+
 ## 💡 Summary
 
 [Highlight skills – Call out full-stack integration, database handling, and asynchronous JS logic, showing technical depth without needing a large application.]
