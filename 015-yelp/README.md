@@ -12,8 +12,8 @@ A comparative study of rank-based, collaborative filtering, and clustering-based
 - [Methodology](#-methodology)
 - [Results](#-results)
 - [Insights & Recommendations](#-insights--recommendations)
-- [Technologies Used](#technologies-used)
-- [How to Run](#how-to-run)
+- [Technologies Used](#-technologies-used)
+- [How to Run](#-how-to-run)
 
 ---
 
