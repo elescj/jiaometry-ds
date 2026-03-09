@@ -1,4 +1,4 @@
-# ⚡ Electricity Load Forecasting with Multivariate Singular Spectrum Analysis (MSSA)
+# 🔌 Electricity Load Forecasting with Multivariate Singular Spectrum Analysis (MSSA)
 A time series forecasting study applying **Multivariate Singular Spectrum Analysis (MSSA)** to predict electricity consumption across multiple smart meter clients using probabilistic forecasts and prediction intervals.
 
 ![Graphical Summary](attachments/electricity.png)
