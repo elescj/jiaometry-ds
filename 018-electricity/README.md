@@ -202,8 +202,8 @@ However, performance varies depending on the characteristics of each client.
 
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/electricity-load-forecasting.git
-cd electricity-load-forecasting
+git clone https://github.com/elescj/018-electricity-lr.git
+cd 018-electricity-lr
 
 # Create virtual environment
 python -m venv venv
@@ -212,5 +212,5 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the notebook or script
-python forecast.py
+# Run the project
+python main.py
