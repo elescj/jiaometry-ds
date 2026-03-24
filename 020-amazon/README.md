@@ -219,8 +219,8 @@ Hyperparameters tuned using **GridSearchCV**
 
 ```bash
 # Clone repository
-git clone https://github.com/elescj/amazon.git
-cd amazon
+git clone https://github.com/elescj/020-amazon-lr.git
+cd 020-amazon-lr
 
 # Create virtual environment
 python -m venv venv
