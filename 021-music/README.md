@@ -253,8 +253,8 @@ Key findings:
 
 ```bash
 # Clone repository
-git clone https://github.com/elescj/21-music.git
-cd music-recommendation-system
+git clone https://github.com/elescj/021-music-lr.git
+cd 021-music-lr
 
 # Create virtual environment
 python -m venv venv
