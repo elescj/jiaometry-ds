@@ -12,8 +12,8 @@ A comprehensive study of **popularity-based methods, collaborative filtering, ma
 - [Methodology](#-methodology)
 - [Results](#-results)
 - [Insights & Recommendations](#-insights--recommendations)
-- [Technologies Used](#-technologies-used)
-- [How to Run](#-how-to-run)
+- [Technologies Used](#technologies-used)
+- [How to Run](#how-to-run)
 
 ---
 
