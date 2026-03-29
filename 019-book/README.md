@@ -244,8 +244,8 @@ Key findings:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/book-recommendation-system.git
-cd book-recommendation-system
+git clone https://github.com/elescj/019-book-lr.git
+cd 019-book-lr
 
 # Create virtual environment
 python -m venv venv
